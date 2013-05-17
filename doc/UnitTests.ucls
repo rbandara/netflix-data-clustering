@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="org.nc.clustering.SEPCImplTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/clustering/SEPCImplTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="189" x="291" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.nc.clustering.ClusterFinderTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/clustering/ClusterFinderTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="155" x="823" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.nc.clustering.ClusterAnalysisTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/clustering/ClusterAnalysisTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="164" x="2021" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.nc.clustering.CombinatoinFinderMainTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/clustering/CombinatoinFinderMainTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="224" x="2225" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="org.nc.data.DataCacheTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/data/DataCacheTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="322" width="263" x="520" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="org.nc.data.FileDataLoaderTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/data/FileDataLoaderTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="245" x="1505" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="org.nc.data.CustomerIdMapperTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/data/CustomerIdMapperTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="160" width="191" x="1790" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="org.nc.prediction.RatingPredictorImplTest" project="sepc"
+    file="/sepc/src/test/java/org/nc/prediction/RatingPredictorTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="160" width="208" x="1018" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="org.nc.util.ArrayUtilTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/util/ArrayUtilTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="210" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="org.nc.util.RandomUtilTest" project="sepc" 
+    file="/sepc/src/test/java/org/nc/util/RandomUtilTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="199" x="1266" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <package id="11" language="java" name="org.nc.prediction" project="sepc" file="/sepc/src/main/java/org/nc/prediction" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="103" y="505"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="12" language="java" name="org.nc.clustering" project="sepc" file="/sepc/src/main/java/org/nc/clustering" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="288" y="505"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="13" language="java" name="org.nc.util" project="sepc" file="/sepc/src/main/java/org/nc/util" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="461" y="505"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="14" language="java" name="org.nc.data" project="sepc" file="/sepc/src/main/java/org/nc/data" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="623" y="505"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

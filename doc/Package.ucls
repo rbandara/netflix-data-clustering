@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <package id="1" language="java" name="org.nc.beans" project="sepc" file="/sepc/src/main/java/org/nc/beans" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="122" x="41" y="227"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="org.nc.prediction" project="sepc" file="/sepc/src/main/java/org/nc/prediction" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="145" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="org.nc.clustering" project="sepc" file="/sepc/src/main/java/org/nc/clustering" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="144" x="226" y="37"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="org.nc.util" project="sepc" file="/sepc/src/main/java/org/nc/util" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="122" x="386" y="227"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="org.nc.exception" project="sepc" file="/sepc/src/main/java/org/nc/exception" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="143" x="203" y="227"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <package id="6" language="java" name="org.nc.data" project="sepc" file="/sepc/src/main/java/org/nc/data" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="122" x="203" y="132"/>    
+    <display autosize="true" stereotype="true" accessors="true"/>  
+  </package>  
+  <dependency id="7">    
+    <bendpoint x="50" y="132"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="10">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="11">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="12">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <dependency id="13">    
+    <bendpoint x="355" y="132"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="14">    
+    <bendpoint x="142" y="132"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

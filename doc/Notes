@@ -1,0 +1,3 @@
+How to create a jar file with Maven
+http://stackoverflow.com/questions/574594/how-can-i-create-an-executable-jar-with-dependencies-using-maven
+mvn clean compile assembly:single
