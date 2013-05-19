@@ -30,7 +30,8 @@ public class ProbeDataSetPredictor {
     IPredictor predictor = null;
 
     public ProbeDataSetPredictor(){
-        predictor = new RatingPredictorImpl();
+//        predictor = new RatingPredictorImpl();
+        predictor = new RatingPredictorNaiveImpl();
     }
 
     Logger logger = Logger.getLogger(this.getClass().getName());
@@ -56,7 +57,26 @@ public class ProbeDataSetPredictor {
         }
         double RMSE = Math.sqrt( sumOfSquaredError/pairs.size() );
         logger.info("RMSE value " + RMSE);
-        logger.info("Calculated Ratings " + predictor.getRatingsCalculated());      //1.161663555113005
+        logger.info("Calculated Ratings " + predictor.getRatedUserMovies().size());      //1.161663555113005
+
+
+        sumOfSquaredError = 0;
+        // Calculate RMSE seperately for the user,movie which the prediction was done using clustering approach
+        List<Pair> ratedUserMoviesUsingClusteringApproach = predictor.getRatedUserMovies();
+        for (Pair pair : ratedUserMoviesUsingClusteringApproach) {
+            double prediction = pair.getRating();
+            double realRating = dataCache.getRating(pair.getMovieId(),pair.getUserId());
+
+            double squaredError = ( Math.pow((realRating - prediction),2) );
+            sumOfSquaredError = sumOfSquaredError + squaredError;
+        }
+        RMSE = Math.sqrt( sumOfSquaredError/pairs.size() );
+        logger.info("RMSE value clustered only" + RMSE);
+        /*RMSE value 1.1542094155741365
+        Calculated Ratings 5254
+        RMSE value clustered only0.7817284534926476*/
+
+
     }
 
     public static void main(String[] args) {

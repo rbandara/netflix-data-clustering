@@ -1,5 +1,9 @@
 package org.nc.prediction;
 
+import org.nc.beans.Pair;
+
+import java.util.List;
+
 /**
  * @author rbandara
  * Naive implementation of the IPredictor
@@ -18,7 +22,7 @@ public class RatingPredictorNaiveImpl implements IPredictor {
     }
 
     @Override
-    public int getRatingsCalculated() {
-        return 0;
+    public List<Pair> getRatedUserMovies() {
+        return null;
     }
 }

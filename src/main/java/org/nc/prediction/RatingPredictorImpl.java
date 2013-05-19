@@ -3,6 +3,7 @@ package org.nc.prediction;
 import com.google.common.primitives.Ints;
 import org.apache.log4j.Logger;
 import org.nc.beans.Cluster;
+import org.nc.beans.Pair;
 import org.nc.clustering.ClusterUtil;
 import org.nc.data.DataCacheFactory;
 import org.nc.data.FileDataLoader;
@@ -26,6 +27,10 @@ public class RatingPredictorImpl implements IPredictor{
     IDataCache cache = null;
     GlobalRatingCalculator globalRatingCalculator = null;
     int ratingsCalculated = 0;
+
+    // a variable to keep the user movie pairs rated using the clustering mechanism
+    // if a movie don't belong to a cluster we take the average rating of the movie as the predicted rating
+    private List<Pair> ratedUserMovies = new ArrayList<Pair>();
 
     public RatingPredictorImpl() {
         cache = DataCacheFactory.getDataCache();
@@ -99,12 +104,18 @@ public class RatingPredictorImpl implements IPredictor{
             // 1. We can look at the rating given to the movie in those clusters and take the average of the ratings
             // Get the average rating of <code> clusterAverageRatingList </code>
             double rating = ClusterUtil.calculateAverageRating(movieId, maxSimilarityClusters);
+            Pair pair = new Pair(userId,movieId,rating);
+            ratedUserMovies.add(pair);
             return rating;
         }
     }
 
-    public int getRatingsCalculated() {
-        return ratingsCalculated;
+    /**
+     * Returns the set of movies rated using the clustering approach
+     * @return
+     */
+    public List<Pair> getRatedUserMovies() {
+        return ratedUserMovies;
     }
 }
 

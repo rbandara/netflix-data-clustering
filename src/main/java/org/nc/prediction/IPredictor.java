@@ -1,5 +1,9 @@
 package org.nc.prediction;
 
+import org.nc.beans.Pair;
+
+import java.util.List;
+
 /**
  * @author rbandara
  * The contract all the prediction algorithms has to implement
@@ -12,5 +16,5 @@ public interface IPredictor {
      * @return the predicted rating
      */
     public double predict(int userId, int movieId);
-    public int getRatingsCalculated();
+    public List<Pair> getRatedUserMovies();
 }
